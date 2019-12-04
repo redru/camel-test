@@ -13,12 +13,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.apache.camel:camel-spring-boot-starter:2.24.2'
-	implementation 'org.apache.camel:camel-servlet-starter:2.24.2'
 	implementation 'org.apache.camel:camel-jackson-starter:2.24.2'
-	implementation 'org.apache.camel:camel-swagger-java-starter:2.24.2'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
