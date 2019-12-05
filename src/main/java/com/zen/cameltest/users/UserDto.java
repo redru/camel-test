@@ -1,4 +1,4 @@
-package com.zen.cameltest.controllers.users;
+package com.zen.cameltest.users;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -6,8 +6,12 @@ import java.util.Objects;
 public class UserDto {
 
   private Long id;
+  private String username;
+  private String password;
   private String name;
+  private String surname;
   private LocalDateTime creationDate;
+  private Long version;
 
   @Override
   public boolean equals(Object o) {
@@ -34,6 +38,22 @@ public class UserDto {
     this.id = id;
   }
 
+  public String getUsername() {
+    return username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
   public String getName() {
     return name;
   }
@@ -42,12 +62,28 @@ public class UserDto {
     this.name = name;
   }
 
+  public String getSurname() {
+    return surname;
+  }
+
+  public void setSurname(String surname) {
+    this.surname = surname;
+  }
+
   public LocalDateTime getCreationDate() {
     return creationDate;
   }
 
   public void setCreationDate(LocalDateTime creationDate) {
     this.creationDate = creationDate;
+  }
+
+  public Long getVersion() {
+    return version;
+  }
+
+  public void setVersion(Long version) {
+    this.version = version;
   }
 
 }
