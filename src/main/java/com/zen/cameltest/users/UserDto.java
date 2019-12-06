@@ -1,6 +1,5 @@
 package com.zen.cameltest.users;
 
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class UserDto {
@@ -10,7 +9,6 @@ public class UserDto {
   private String password;
   private String name;
   private String surname;
-  private LocalDateTime creationDate;
   private Long version;
 
   @Override
@@ -68,14 +66,6 @@ public class UserDto {
 
   public void setSurname(String surname) {
     this.surname = surname;
-  }
-
-  public LocalDateTime getCreationDate() {
-    return creationDate;
-  }
-
-  public void setCreationDate(LocalDateTime creationDate) {
-    this.creationDate = creationDate;
   }
 
   public Long getVersion() {

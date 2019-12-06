@@ -21,8 +21,10 @@ dependencies {
 	implementation 'org.apache.camel.springboot:camel-file-watch-starter:3.0.0'
 	implementation 'org.apache.camel.springboot:camel-http-starter:3.0.0'
 	implementation 'org.apache.camel.springboot:camel-rabbitmq-starter:3.0.0'
+	implementation 'org.apache.camel.springboot:camel-log-starter:3.0.0'
 
 	implementation 'com.google.guava:guava:28.1-jre'
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.4.0'
 
 	runtimeOnly 'com.h2database:h2'
 
